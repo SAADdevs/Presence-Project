@@ -1,0 +1,101 @@
+       
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background:url('https://cdn.pixabay.com/photo/2017/10/05/10/37/paper-2818976_1280.jpg')
+}   
+
+        h1 {
+    font-weight: bold ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-style: italic;
+    color: #0D2C5E;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+
+    
+}
+
+        form {
+            background-color: #e4eff5;
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 50px 50px 10px rgba(0, 0, 0, 0.1);
+            font-weight: bold ;
+            font-style: oblique;
+            font-style: italic;
+            display: flex;
+flex-direction: column;
+padding:10px;
+border-radius: 6px;
+box-shadow:0 0 10px black;
+width: 50%;
+border-radius: 9px;
+
+}
+        
+
+        h2 {
+            color: #0D2C5E;
+            font-size: 24px;
+            font-weight: bold ;
+display: flex;
+align-items: center;
+justify-content: center;
+        }
+
+        label {
+text-align: center;
+margin-bottom: 20px;
+color: #0c2b5a;
+font-style: oblique;
+font-size:20px;
+}
+ol{
+   margin-left: 160px;
+   
+
+}
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #6e2929;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color:#0c2b5a;;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            color: #ccc;
+        }
+
+        input[type="submit"]:hover {
+    background-color: #a2c2ca;
+}
+        hr {
+            font-size:50px;
+        }
+        #liste {
+text-align: center; 
+margin-top: 50px; 
+
+}
+ul{
+font-weight: bold ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-style: italic;
+    color:rgb(6, 6, 6);
+}

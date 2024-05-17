@@ -1,0 +1,81 @@
+
+   /* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(12,42,48);
+    background-image: url(bgLogin.jpg);
+}
+
+/* Heading styles */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #a1d1d3;
+    font-size:90px;
+}
+
+/* Form container styles */
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #e4eff5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 200 300 100px rgb(0, 0, 0);
+}
+
+/* Heading styles within the form */
+.container h4 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0c2b5a;
+    font-style: oblique;
+    font-size:20px;
+}
+
+/* Horizontal line styles */
+hr {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 6px;
+    border-top: 1px solid #257aa5;
+}
+
+/* Radio button container styles */
+.container div {
+    margin-bottom: 20px;
+}
+
+/* Radio button styles */
+.container input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Submit button styles */
+.container input[type="submit"] {
+    width: 100%;
+    background-color:#0c2b5a;;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.container input[type="submit"]:hover {
+    background-color: #d2c7fc;
+}
+
+    
+ .content{
+    font-style:oblique;
+    font-style:italic;
+    font-weight: bold;
+ }

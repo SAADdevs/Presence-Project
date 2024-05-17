@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vérification de l'absence</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(12,42,48);
+            color: #333;
+            background:url('https://cdn.pixabay.com/photo/2017/10/05/10/37/paper-2818976_1280.jpg')
+        }
+        h1 {
+            color: #042584 ;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 50px;
+            text-decoration: underline;
+            font-style: italic;
+            text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+        }
+        h2 {
+            color:#042584 ;
+            margin-top: 20px;
+            text-align: left;
+            font-size: 30px;
+            text-decoration: underline;
+            text-shadow: 3 px 3px 3px;
+        }
+        ul {
+            list-style-type: square;
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid #042584 ; /* Ajout de bordure */
+            border-radius: 10px; /* Coins arrondis */
+           
+        }
+        li {
+            margin-bottom: 10px;
+            color: rgb(241, 241, 241);
+           font-weight: bold;
+           font-size: 90 px;
+        }
+        li.a {
+            color: #db1414;
+            text-decoration-line: underline;
+            font-size: 20px;
+        }
+        form {
+            display: flex;
+            justify-content: center;
+            margin: 30px auto;
+            padding: 10px 20px;
+        }
+        input[type="submit"] {
+            margin: 0 10px;
+            background-color: #042584 ;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 20px;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #0bbbe7;
+        }
+#aa{
+    font-size: 20px;
+}
+    </style>
+</head>
+<body>
+    <h1><Marquee>Verification de l'absence</Marquee></h1>
+    <h2> Conditions à Respecter :</i></h2>
+    <ul>
+        <li id="aa">Les élèves ne sont pas autorisés à s'absenter, sauf dans des cas extrêmes.</li>
+        <li id="aa">En cas de maladie, les étudiants doivent fournir un certificat médical.</li>
+        <li id="aa">En cas d'urgence personnelle, les étudiants doivent informer l'école le plus tôt possible et fournir une explication valide comme justification.</li>
+        <li class="a">Deux absences dans le même module nécessitent une réinscription.</li>
+    </ul>
+    <form action="./prese.php">
+        <input type="submit" value="TEST">
+    </form>
+</body>
+</html>

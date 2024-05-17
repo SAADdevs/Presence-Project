@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            background:url('https://cdn.pixabay.com/photo/2017/10/05/10/37/paper-2818976_1280.jpg')
+        }
+    
+        h1 {
+            text-align: center;
+            padding: 10px;
+            margin: 10px 0;
+            color:#042584 ;
+        }
+        
+        h2 {
+            color: #3e69e9;
+            padding: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0 auto;
+            width: 80%;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+        
+        input[type="submit"] {
+            margin: 10px 5px;
+            background-color: #042584;
+            border: none;
+            border-radius: 10px;
+            font-size: 20px;
+            color: #fff;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        
+        label {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+        
+        #message {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .buttons-container {
+            display: flex;
+            justify-content: center;
+        }
+        #a {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+        }
+    </style>
+</head>
+
+<body>
+    <div id="a">
+        <h1><i>Vous êtes :</i></h1>
+        <h2>Attention : vous ne pouvez cliquer qu'une seule fois.!!</h2>
+        
+        <div class="buttons-container">
+            <input type="submit" value="ABSENT(E)" id="absent-button" onclick="gg()">
+            
+            <form action="present.php" method="post">
+                <input type="submit" value="PRESENT(E)">
+            </form>
+        </div>
+        
+        <div id="message"></div>
+    </div>
+
+    <script>
+        const absentButton = document.getElementById('absent-button');
+        const messageDiv = document.getElementById('message');
+
+        function gg() {
+            messageDiv.innerText = "L'étudiant est ABSENT !!";
+           
+            absentButton.remove();
+            document.querySelector('form').remove();
+        }; 
+        
+    </script>
+    <?php $sqlUpdate = "UPDATE `etudiant` SET `present`='non' WHERE code=1111"; // Replace 1111 with the correct student code variable
+            if ($conn->query($sqlUpdate) === TRUE) {
+                $CHECK=false;
+                $_SESSION["message"] = "YOU ARE ABSENT";
+            } else {
+                $_SESSION["error"] = "Erreur lors de la mise à jour du statut de présence.";
+            } ?>
+</body>
+</html>
